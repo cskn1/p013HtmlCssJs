@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="/Bootstrap/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <style>
+    #yukariCik{
+      position:fixed;
+      bottom:18px;
+      right: 18px;
+      z-index:18;
+      display: none;
+      background-color: orange;
+      color: white;
+      padding: 5px 10px;
+
+    }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <header class="mb-5 mt-3">
+            <div class="row align-items-center" >
+                <div id="logo" class="col">
+                    <a href="/Bootstrap/anasayfa.html">
+                        <img src="images/indir.png" alt="" width="250">
+                    </a>
+                </div>
+                
+                <div id="tanitim" class="col-auto">
+                    info@testsitesi.com
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Logo</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Bootstrap/anasayfa.html">Anasayfa</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Hakkımızda</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Ürünlerimiz
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/Bootstrap/urunlerimiz.html">Elektronik</a></li>
+                          <li><a class="dropdown-item" href="/Bootstrap/urunlerimiz.html">Bilgisayar</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="/Bootstrap/urunlerimiz.html">Telefon</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="/Bootstrap/iletisim.html">İletişim</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Ara</button>
+                    </form>
+                  </div>
+                </div>
+            </nav>   
+        </header>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/Image20230209213202.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Image20230209213257.jpg" class="d-block w-50" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Image20230209213307.jpg" class="d-block w-50" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section>
+            <h1 class="display-1 text-center">
+                Eğitimlerimiz
+            </h1>
+            <div class="row">
+                <div class="col-4 p-5">                   
+                    <img src="images/Image20230207225533.png" alt="" class="img-fluid">
+                    <h2>Html Eğitimi</h2>
+                </div>
+                <div class="col-4 p-5">                  
+                    <img src="images/Image20230207225610.png" alt="" class="img-fluid">
+                    <h2>CSS Eğitimi</h2>
+                </div>
+                <div class="col-4 p-5">                       
+                   <img src="images/Image20230207225600.png" alt="" class="img-fluid">
+                   <h2>Javascript Eğitimi</h2>                   
+                </div>
+            </div>           
+        </section>
+        <footer class="row">    
+            <div class="col">
+                <h3> Bize Ulaşin</h3>
+                <address>TURKIYE/Sivas</address>
+                    coskunnyilmaz@gmail.com
+                <br>
+                    05074995568
+            </div>
+            <div class="col">
+                <h3>Gerekli Bağlantilar</h3>
+                <a href="/Bootstrap/ders02HTMLSayfa.html">Anasayfa</a>
+                <br>
+                <a href="/Bootstrap/hakkimizda.html">Hakkimizda</a>
+                <br>
+                <a href="/Bootstrap/iletisim.html">İletişim</a>
+            </div>
+            <div class="col-auto">
+                <h3>E Bülten</h3>
+                <i>
+                  bültenimize abone olarak kampanyalarimizden...
+                </i>
+                <form action="EBultenKayitMetodu" class="d-flex">
+                    <input type="text" name="EBulten" placeholder="E Mail Adresinizi Giriniz" class="form-control">
+                    <input type="submit" value="Kaydol" class="btn btn-primary">
+                </form>
+                  
+            </div>
+        </footer>
+
+    </div>
+    <a href="#" id="yukariCik">Yukarı Çık</a>
+    <script>
+      $(window).scroll(function(){
+        if ($(window).scrollTop()>100){
+         $("#yukariCik").fadeIn()
+        }
+        else $("#yukariCik").fadeOut()
+        $("#yukariCik").click(function(){
+
+          $("html,body").animate({scrollTop:0},1000)
+        })
+    })
+    </script>
+    
+</body>
+</html>

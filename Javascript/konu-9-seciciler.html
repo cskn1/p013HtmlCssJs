@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript de Seçiciler</title>
+</head>
+<body>
+    <h1>Javascript de Seçiciler</h1>
+    <p>
+        js de DOM(dOCUMENT OBJECT MODEL)yapısı sayesinde sayfadaki tüm elementlere ulaşıp üzerinde değişiklik yapabiliyoruz.
+    </p>
+    <h2>Elementleri Id ye göre seçme</h2>
+    <p id="mrbdny">
+        merhaba 
+    </p>
+    <p id="jsIdSeciciTest" style="border:1px solid"></p>
+    <script>
+        const icerik=document.getElementById("mrbdny");//sayfadaki id si mrbdny olan elementi seçtik
+        document.getElementById("jsIdSeciciTest").innerText="mrbdny elementinden gelen içerik:"+icerik.innerText
+    </script>
+
+    <h2>Elementleri Etiket Adına(Tag name) Göre seçme</h2>
+    <div> div içeriği</div>
+    <div id="bosDiv" style="border:1px solid"></div>
+    <script>
+        var divler=document.getElementsByTagName("div")//sayfadaki div elementlerini seçtik
+        document.getElementById("bosDiv").innerText="ilk div  elementinden gelen içerik:"+divler[0].innerText
+    </script>
+
+    <hr>
+
+    <h2 class="sinifSeciciBaslik">Elementleri Sınıf Adına(class name) Göre seçme</h2>
+    <div id="sinifSecici" style="border:1px solid"></div>
+    <script>
+        var sinifaGoreSec=document.getElementsByClassName
+        ("sinifSeciciBaslik");
+        document.getElementById("sinifSecici").innerText=sinifaGoreSec[0].innerText
+    </script>
+
+    <hr>
+    <h2 class="sorguSecici">Elementleri Css sorgularına Göre seçme</h2>
+    <p id="sorguSecici" style="border:1px solid"></p>
+    <script>
+         var sorguSecici=document.querySelectorAll("h2.sorguSecici") //querySelectorAll metodu sayfadaki birden çok elemnt seçer elementlerş dizi formatında getirir.
+         document.getElementById("sorguSecici").innerText=sorguSecici[0].innerText
+    </script>
+
+    <hr>
+
+    <h3>Tek Eleman Secici</h3>
+    <p id="ilkElemanicerigi"></p>
+    <script>
+        var ilkEleman=document.querySelector("p"); //querySelectorAll metodu sayfadaki tek eleman se.er ve css sorgusu kullanarak seçim yapmanızı sağlar
+        document.querySelector("#ilkElemanicerigi").innerHTML=ilkEleman.innerHTML
+
+        var tarih=new Date(); //tarih işlemleri için 
+        document.querySelector("#ilkElemanicerigi").innerHTML=ilkEleman.innerHTML += "<hr>Tarih"+ tarih ;
+        document.querySelector("#ilkElemanicerigi").innerHTML=ilkEleman.innerHTML += "<hr>Gün(getDate) :"+ tarih.getDate() ;
+        document.querySelector("#ilkElemanicerigi").innerHTML=ilkEleman.innerHTML += "<hr>Ay(getMonth) :"+ tarih.getMonth()+1;
+        document.querySelector("#ilkElemanicerigi").innerHTML=ilkEleman.innerHTML += "<hr>Yıl(getFullYear) :"+ (tarih.getFullYear());
+
+    </script>
+
+
+</body>
+</html>
